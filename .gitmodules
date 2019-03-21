@@ -1,0 +1,3 @@
+[submodule "examples/swagaf"]
+	path = examples/swagaf
+	url = https://github.com/rowanz/swagaf.git

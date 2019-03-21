@@ -1,0 +1,1897 @@
+digraph G {
+  node0 [label="xla::device_data\ns64[16]{0}\ndevice=CPU:0"]
+  node1 [label="prim::Constant\nf32[1]{0}\nvalue={0}"]
+  node2 [label="xla::device_data\nf32[1,768]{1,0}\ndevice=CPU:0"]
+  node3 [label="aten::permute\nf32[768,1]{0,1}\ndims=[1, 0]"]
+  node4 [label="prim::Constant\nf32[64,768]{1,0}\nvalue=0.9"]
+  node5 [label="xla::device_data\nf32[64,768]{1,0}\ndevice=CPU:0"]
+  node6 [label="aten::div\nf32[64,768]{1,0}"]
+  node7 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node8 [label="xla::device_data\nf32[768,768]{1,0}\ndevice=CPU:0"]
+  node9 [label="aten::permute\nf32[768,768]{0,1}\ndims=[1, 0]"]
+  node10 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node11 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node12 [label="aten::mul\nf32[768]{0}"]
+  node13 [label="prim::Constant\nf64[]\nvalue=1"]
+  node14 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node15 [label="aten::mul\nf64[]"]
+  node16 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node17 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node18 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node19 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node20 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node21 [label="aten::mul\nf32[768]{0}"]
+  node22 [label="prim::Constant\nf64[]\nvalue=1"]
+  node23 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node24 [label="aten::mul\nf64[]"]
+  node25 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node26 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node27 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node28 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node29 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node30 [label="aten::mul\nf32[768]{0}"]
+  node31 [label="prim::Constant\nf64[]\nvalue=1"]
+  node32 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node33 [label="aten::mul\nf64[]"]
+  node34 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node35 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node36 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node37 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node38 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node39 [label="aten::mul\nf32[768]{0}"]
+  node40 [label="prim::Constant\nf64[]\nvalue=1"]
+  node41 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node42 [label="aten::mul\nf64[]"]
+  node43 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node44 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node45 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node46 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node47 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node48 [label="aten::mul\nf32[768]{0}"]
+  node49 [label="prim::Constant\nf64[]\nvalue=1"]
+  node50 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node51 [label="aten::mul\nf64[]"]
+  node52 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node53 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node54 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node55 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node56 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node57 [label="aten::mul\nf32[768]{0}"]
+  node58 [label="prim::Constant\nf64[]\nvalue=1"]
+  node59 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node60 [label="aten::mul\nf64[]"]
+  node61 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node62 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node63 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node64 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node65 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node66 [label="aten::mul\nf32[768]{0}"]
+  node67 [label="prim::Constant\nf64[]\nvalue=1"]
+  node68 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node69 [label="aten::mul\nf64[]"]
+  node70 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node71 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node72 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node73 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node74 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node75 [label="aten::mul\nf32[768]{0}"]
+  node76 [label="prim::Constant\nf64[]\nvalue=1"]
+  node77 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node78 [label="aten::mul\nf64[]"]
+  node79 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node80 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node81 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node82 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node83 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node84 [label="aten::mul\nf32[768]{0}"]
+  node85 [label="prim::Constant\nf64[]\nvalue=1"]
+  node86 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node87 [label="aten::mul\nf64[]"]
+  node88 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node89 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node90 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node91 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node92 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node93 [label="aten::mul\nf32[768]{0}"]
+  node94 [label="prim::Constant\nf64[]\nvalue=1"]
+  node95 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node96 [label="aten::mul\nf64[]"]
+  node97 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node98 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node99 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node100 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node101 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node102 [label="aten::mul\nf32[768]{0}"]
+  node103 [label="prim::Constant\nf64[]\nvalue=1"]
+  node104 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node105 [label="aten::mul\nf64[]"]
+  node106 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node107 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node108 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node109 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node110 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node111 [label="aten::mul\nf32[768]{0}"]
+  node112 [label="prim::Constant\nf64[]\nvalue=1"]
+  node113 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node114 [label="aten::mul\nf64[]"]
+  node115 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node116 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node117 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node118 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node119 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node120 [label="aten::mul\nf32[768]{0}"]
+  node121 [label="prim::Constant\nf64[]\nvalue=1"]
+  node122 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node123 [label="aten::mul\nf64[]"]
+  node124 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node125 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node126 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node127 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node128 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node129 [label="aten::mul\nf32[768]{0}"]
+  node130 [label="prim::Constant\nf64[]\nvalue=1"]
+  node131 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node132 [label="aten::mul\nf64[]"]
+  node133 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node134 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node135 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node136 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node137 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node138 [label="aten::mul\nf32[768]{0}"]
+  node139 [label="prim::Constant\nf64[]\nvalue=1"]
+  node140 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node141 [label="aten::mul\nf64[]"]
+  node142 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node143 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node144 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node145 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node146 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node147 [label="aten::mul\nf32[768]{0}"]
+  node148 [label="prim::Constant\nf64[]\nvalue=1"]
+  node149 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node150 [label="aten::mul\nf64[]"]
+  node151 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node152 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node153 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node154 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node155 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node156 [label="aten::mul\nf32[768]{0}"]
+  node157 [label="prim::Constant\nf64[]\nvalue=1"]
+  node158 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node159 [label="aten::mul\nf64[]"]
+  node160 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node161 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node162 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node163 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node164 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node165 [label="aten::mul\nf32[768]{0}"]
+  node166 [label="prim::Constant\nf64[]\nvalue=1"]
+  node167 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node168 [label="aten::mul\nf64[]"]
+  node169 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node170 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node171 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node172 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node173 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node174 [label="aten::mul\nf32[768]{0}"]
+  node175 [label="prim::Constant\nf64[]\nvalue=1"]
+  node176 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node177 [label="aten::mul\nf64[]"]
+  node178 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node179 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node180 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node181 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node182 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node183 [label="aten::mul\nf32[768]{0}"]
+  node184 [label="prim::Constant\nf64[]\nvalue=1"]
+  node185 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node186 [label="aten::mul\nf64[]"]
+  node187 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node188 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node189 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node190 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node191 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node192 [label="aten::mul\nf32[768]{0}"]
+  node193 [label="prim::Constant\nf64[]\nvalue=1"]
+  node194 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node195 [label="aten::mul\nf64[]"]
+  node196 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node197 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node198 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node199 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node200 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node201 [label="aten::mul\nf32[768]{0}"]
+  node202 [label="prim::Constant\nf64[]\nvalue=1"]
+  node203 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node204 [label="aten::mul\nf64[]"]
+  node205 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node206 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node207 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node208 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node209 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node210 [label="aten::mul\nf32[768]{0}"]
+  node211 [label="prim::Constant\nf64[]\nvalue=1"]
+  node212 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node213 [label="aten::mul\nf64[]"]
+  node214 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node215 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node216 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node217 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node218 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node219 [label="aten::mul\nf32[768]{0}"]
+  node220 [label="prim::Constant\nf64[]\nvalue=1"]
+  node221 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node222 [label="aten::mul\nf64[]"]
+  node223 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node224 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node225 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node226 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node227 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node228 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node229 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node230 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node231 [label="aten::mul\nf32[768]{0}"]
+  node232 [label="prim::Constant\nf64[]\nvalue=1"]
+  node233 [label="prim::Constant\nf64[]\nvalue=1e-12"]
+  node234 [label="aten::mul\nf64[]"]
+  node235 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=2"]
+  node236 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node237 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node238 [label="xla::device_data\ns64[16,4,80]{2,1,0}\ndevice=CPU:0"]
+  node239 [label="aten::view\ns64[64,80]{1,0}\noutput_size=(64, 80)"]
+  node240 [label="aten::view\ns64[5120]{0}\noutput_size=(-1)"]
+  node241 [label="xla::device_data\nf32[2,768]{1,0}\ndevice=CPU:0"]
+  node242 [label="aten::index_select\nf32[5120,768]{1,0}\ndim=0"]
+  node243 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node244 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node245 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=1"]
+  node246 [label="prim::Constant\ns64[80]{0}\nvalue={0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 1..."]
+  node247 [label="aten::squeeze\ns64[1,80]{1,0}"]
+  node248 [label="aten::expand\ns64[64,80]{1,0}\nsize=[64, 80]"]
+  node249 [label="aten::view\ns64[5120]{0}\noutput_size=(-1)"]
+  node250 [label="xla::device_data\nf32[512,768]{1,0}\ndevice=CPU:0"]
+  node251 [label="aten::index_select\nf32[5120,768]{1,0}\ndim=0"]
+  node252 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node253 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node254 [label="xla::device_data\ns64[16,4,80]{2,1,0}\ndevice=CPU:0"]
+  node255 [label="aten::view\ns64[64,80]{1,0}\noutput_size=(64, 80)"]
+  node256 [label="aten::view\ns64[5120]{0}\noutput_size=(-1)"]
+  node257 [label="xla::device_data\nf32[30522,768]{1,0}\ndevice=CPU:0"]
+  node258 [label="aten::index_select\nf32[5120,768]{1,0}\ndim=0"]
+  node259 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node260 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node261 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node262 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node263 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node264 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node265 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node266 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node267 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node268 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node269 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node270 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node271 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node272 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node273 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node274 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node275 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node276 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node277 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node278 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node279 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node280 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node281 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node282 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node283 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node284 [label="aten::mul\nf32[768]{0}"]
+  node285 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node286 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node287 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node288 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node289 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node290 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node291 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node292 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node293 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node294 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node295 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node296 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node297 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node298 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node299 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node300 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node301 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node302 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node303 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node304 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node305 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node306 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node307 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node308 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node309 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node310 [label="aten::mul\nf32[768]{0}"]
+  node311 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node312 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node313 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node314 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node315 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node316 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node317 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node318 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node319 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node320 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node321 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node322 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node323 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node324 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node325 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node326 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node327 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node328 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node329 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node330 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node331 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node332 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node333 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node334 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node335 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node336 [label="aten::mul\nf32[768]{0}"]
+  node337 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node338 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node339 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node340 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node341 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node342 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node343 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node344 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node345 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node346 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node347 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node348 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node349 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node350 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node351 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node352 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node353 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node354 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node355 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node356 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node357 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node358 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node359 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node360 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node361 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node362 [label="aten::mul\nf32[768]{0}"]
+  node363 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node364 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node365 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node366 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node367 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node368 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node369 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node370 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node371 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node372 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node373 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node374 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node375 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node376 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node377 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node378 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node379 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node380 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node381 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node382 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node383 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node384 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node385 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node386 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node387 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node388 [label="aten::mul\nf32[768]{0}"]
+  node389 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node390 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node391 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node392 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node393 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node394 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node395 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node396 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node397 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node398 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node399 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node400 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node401 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node402 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node403 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node404 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node405 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node406 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node407 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node408 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node409 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node410 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node411 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node412 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node413 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node414 [label="aten::mul\nf32[768]{0}"]
+  node415 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node416 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node417 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node418 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node419 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node420 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node421 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node422 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node423 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node424 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node425 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node426 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node427 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node428 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node429 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node430 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node431 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node432 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node433 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node434 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node435 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node436 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node437 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node438 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node439 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node440 [label="aten::mul\nf32[768]{0}"]
+  node441 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node442 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node443 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node444 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node445 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node446 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node447 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node448 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node449 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node450 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node451 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node452 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node453 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node454 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node455 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node456 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node457 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node458 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node459 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node460 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node461 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node462 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node463 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node464 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node465 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node466 [label="aten::mul\nf32[768]{0}"]
+  node467 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node468 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node469 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node470 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node471 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node472 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node473 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node474 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node475 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node476 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node477 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node478 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node479 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node480 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node481 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node482 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node483 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node484 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node485 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node486 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node487 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node488 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node489 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node490 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node491 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node492 [label="aten::mul\nf32[768]{0}"]
+  node493 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node494 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node495 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node496 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node497 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node498 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node499 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node500 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node501 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node502 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node503 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node504 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node505 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node506 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node507 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node508 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node509 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node510 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node511 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node512 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node513 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node514 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node515 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node516 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node517 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node518 [label="aten::mul\nf32[768]{0}"]
+  node519 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node520 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node521 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node522 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node523 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node524 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node525 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node526 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node527 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node528 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node529 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node530 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node531 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node532 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node533 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node534 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node535 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node536 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node537 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node538 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node539 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node540 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node541 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node542 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node543 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node544 [label="aten::mul\nf32[768]{0}"]
+  node545 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node546 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node547 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node548 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node549 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node550 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node551 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node552 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node553 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node554 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node555 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node556 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node557 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node558 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node559 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node560 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node561 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node562 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node563 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node564 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node565 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node566 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node567 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node568 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node569 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node570 [label="aten::mul\nf32[768]{0}"]
+  node571 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node572 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node573 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node574 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node575 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node576 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node577 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node578 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node579 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node580 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node581 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node582 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node583 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node584 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node585 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node586 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node587 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node588 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node589 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node590 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node591 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node592 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node593 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node594 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node595 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node596 [label="aten::mul\nf32[768]{0}"]
+  node597 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node598 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node599 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node600 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node601 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node602 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node603 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node604 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node605 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node606 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node607 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node608 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node609 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node610 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node611 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node612 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node613 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node614 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node615 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node616 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node617 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node618 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node619 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node620 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node621 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node622 [label="aten::mul\nf32[768]{0}"]
+  node623 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node624 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node625 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node626 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node627 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node628 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node629 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node630 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node631 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node632 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node633 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node634 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node635 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node636 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node637 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node638 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node639 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node640 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node641 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node642 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node643 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node644 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node645 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node646 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node647 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node648 [label="aten::mul\nf32[768]{0}"]
+  node649 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node650 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node651 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node652 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node653 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node654 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node655 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node656 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node657 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node658 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node659 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node660 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node661 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node662 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node663 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node664 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node665 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node666 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node667 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node668 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node669 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node670 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node671 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node672 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node673 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node674 [label="aten::mul\nf32[768]{0}"]
+  node675 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node676 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node677 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node678 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node679 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node680 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node681 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node682 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node683 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node684 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node685 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node686 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node687 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node688 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node689 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node690 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node691 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node692 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node693 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node694 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node695 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node696 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node697 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node698 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node699 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node700 [label="aten::mul\nf32[768]{0}"]
+  node701 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node702 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node703 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node704 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node705 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node706 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node707 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node708 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node709 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node710 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node711 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node712 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node713 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node714 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node715 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node716 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node717 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node718 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node719 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node720 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node721 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node722 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node723 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node724 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node725 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node726 [label="aten::mul\nf32[768]{0}"]
+  node727 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node728 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node729 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node730 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node731 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node732 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node733 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node734 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node735 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node736 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node737 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node738 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node739 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node740 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node741 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node742 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node743 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node744 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node745 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node746 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node747 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node748 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node749 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node750 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node751 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node752 [label="aten::mul\nf32[768]{0}"]
+  node753 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node754 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node755 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node756 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node757 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node758 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node759 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node760 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node761 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node762 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node763 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node764 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node765 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node766 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node767 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node768 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node769 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node770 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node771 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node772 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node773 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node774 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node775 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node776 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node777 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node778 [label="aten::mul\nf32[768]{0}"]
+  node779 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node780 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node781 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node782 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node783 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node784 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node785 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node786 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node787 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node788 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node789 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node790 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node791 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node792 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node793 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node794 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node795 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node796 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node797 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node798 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node799 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node800 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node801 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node802 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node803 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node804 [label="aten::mul\nf32[768]{0}"]
+  node805 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node806 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node807 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node808 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node809 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node810 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node811 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node812 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node813 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node814 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node815 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node816 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node817 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node818 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node819 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node820 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node821 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node822 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node823 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node824 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node825 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node826 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node827 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node828 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node829 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node830 [label="aten::mul\nf32[768]{0}"]
+  node831 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node832 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node833 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node834 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node835 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node836 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node837 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node838 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node839 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node840 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node841 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node842 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node843 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node844 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node845 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node846 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node847 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node848 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node849 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node850 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node851 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node852 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node853 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node854 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node855 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node856 [label="aten::mul\nf32[768]{0}"]
+  node857 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node858 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node859 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node860 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node861 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node862 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node863 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node864 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node865 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node866 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node867 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node868 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node869 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node870 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node871 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node872 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node873 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node874 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node875 [label="aten::view\nf32[64,80,768]{2,1,0}\noutput_size=(64, 80, 768)"]
+  node876 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node877 [label="prim::Constant\nf32[64,80,768]{2,1,0}\nvalue=0.9"]
+  node878 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node879 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node880 [label="prim::Constant\nf32[768]{0}\nvalue=1"]
+  node881 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node882 [label="aten::mul\nf32[768]{0}"]
+  node883 [label="xla::device_data\nf32[64,80,768]{2,1,0}\ndevice=CPU:0"]
+  node884 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node885 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node886 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node887 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node888 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node889 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node890 [label="aten::pow\nf32[64,80,768]{2,1,0}"]
+  node891 [label="aten::mean\nf32[64,80,1]{2,1,0}\ndimensions=[2]\nkeep_reduced_dimensions=1\ndtype=-1"]
+  node892 [label="aten::add\nf32[64,80,1]{2,1,0}"]
+  node893 [label="aten::sqrt\nf32[64,80,1]{2,1,0}"]
+  node894 [label="prim::Constant\nf32[64,80,1]{2,1,0}\nvalue=1"]
+  node895 [label="aten::mul\nf32[64,80,1]{2,1,0}"]
+  node896 [label="aten::sub\nf32[64,80,768]{2,1,0}"]
+  node897 [label="aten::div\nf32[64,80,768]{2,1,0}"]
+  node898 [label="xla::device_data\nf32[768]{0}\ndevice=CPU:0"]
+  node899 [label="aten::mul\nf32[64,80,768]{2,1,0}"]
+  node900 [label="aten::add\nf32[64,80,768]{2,1,0}"]
+  node901 [label="aten::slice\nf32[64,80,768]{2,1,0}\ndim=0\nstart=0\nend=64\nstep=1"]
+  node902 [label="aten::select\nf32[64,768]{1,0}\ndim=1\nindex=0"]
+  node903 [label="aten::addmm\nf32[64,768]{1,0}"]
+  node904 [label="aten::tanh\nf32[64,768]{1,0}"]
+  node905 [label="aten::mul\nf32[64,768]{1,0}"]
+  node906 [label="aten::addmm\nf32[64,1]{1,0}"]
+  node907 [label="aten::view\nf32[16,4]{1,0}\noutput_size=(16, 4)"]
+  node908 [label="aten::log_softmax\nf32[16,4]{1,0}\ndim=1"]
+  node909 [label="aten::nll_loss\nf32[]"]
+  node908 -> node909
+  node0 -> node909
+  node907 -> node908
+  node906 -> node907
+  node905 -> node906
+  node3 -> node906
+  node1 -> node906
+  node904 -> node905
+  node6 -> node905
+  node903 -> node904
+  node902 -> node903
+  node9 -> node903
+  node7 -> node903
+  node901 -> node902
+  node900 -> node901
+  node899 -> node900
+  node12 -> node900
+  node898 -> node899
+  node897 -> node899
+  node896 -> node897
+  node893 -> node897
+  node886 -> node896
+  node895 -> node896
+  node887 -> node895
+  node894 -> node895
+  node892 -> node893
+  node891 -> node892
+  node15 -> node892
+  node890 -> node891
+  node889 -> node890
+  node16 -> node890
+  node886 -> node889
+  node888 -> node889
+  node887 -> node888
+  node17 -> node888
+  node886 -> node887
+  node885 -> node886
+  node876 -> node886
+  node884 -> node885
+  node879 -> node885
+  node883 -> node884
+  node882 -> node884
+  node881 -> node882
+  node880 -> node882
+  node878 -> node879
+  node877 -> node879
+  node875 -> node876
+  node18 -> node876
+  node874 -> node875
+  node873 -> node874
+  node21 -> node874
+  node872 -> node873
+  node871 -> node873
+  node870 -> node871
+  node867 -> node871
+  node860 -> node870
+  node869 -> node870
+  node861 -> node869
+  node868 -> node869
+  node866 -> node867
+  node865 -> node866
+  node24 -> node866
+  node864 -> node865
+  node863 -> node864
+  node25 -> node864
+  node860 -> node863
+  node862 -> node863
+  node861 -> node862
+  node26 -> node862
+  node860 -> node861
+  node859 -> node860
+  node850 -> node860
+  node858 -> node859
+  node853 -> node859
+  node857 -> node858
+  node856 -> node858
+  node855 -> node856
+  node854 -> node856
+  node852 -> node853
+  node851 -> node853
+  node849 -> node850
+  node27 -> node850
+  node848 -> node849
+  node847 -> node848
+  node30 -> node848
+  node846 -> node847
+  node845 -> node847
+  node844 -> node845
+  node841 -> node845
+  node834 -> node844
+  node843 -> node844
+  node835 -> node843
+  node842 -> node843
+  node840 -> node841
+  node839 -> node840
+  node33 -> node840
+  node838 -> node839
+  node837 -> node838
+  node34 -> node838
+  node834 -> node837
+  node836 -> node837
+  node835 -> node836
+  node35 -> node836
+  node834 -> node835
+  node833 -> node834
+  node824 -> node834
+  node832 -> node833
+  node827 -> node833
+  node831 -> node832
+  node830 -> node832
+  node829 -> node830
+  node828 -> node830
+  node826 -> node827
+  node825 -> node827
+  node823 -> node824
+  node36 -> node824
+  node822 -> node823
+  node821 -> node822
+  node39 -> node822
+  node820 -> node821
+  node819 -> node821
+  node818 -> node819
+  node815 -> node819
+  node808 -> node818
+  node817 -> node818
+  node809 -> node817
+  node816 -> node817
+  node814 -> node815
+  node813 -> node814
+  node42 -> node814
+  node812 -> node813
+  node811 -> node812
+  node43 -> node812
+  node808 -> node811
+  node810 -> node811
+  node809 -> node810
+  node44 -> node810
+  node808 -> node809
+  node807 -> node808
+  node798 -> node808
+  node806 -> node807
+  node801 -> node807
+  node805 -> node806
+  node804 -> node806
+  node803 -> node804
+  node802 -> node804
+  node800 -> node801
+  node799 -> node801
+  node797 -> node798
+  node45 -> node798
+  node796 -> node797
+  node795 -> node796
+  node48 -> node796
+  node794 -> node795
+  node793 -> node795
+  node792 -> node793
+  node789 -> node793
+  node782 -> node792
+  node791 -> node792
+  node783 -> node791
+  node790 -> node791
+  node788 -> node789
+  node787 -> node788
+  node51 -> node788
+  node786 -> node787
+  node785 -> node786
+  node52 -> node786
+  node782 -> node785
+  node784 -> node785
+  node783 -> node784
+  node53 -> node784
+  node782 -> node783
+  node781 -> node782
+  node772 -> node782
+  node780 -> node781
+  node775 -> node781
+  node779 -> node780
+  node778 -> node780
+  node777 -> node778
+  node776 -> node778
+  node774 -> node775
+  node773 -> node775
+  node771 -> node772
+  node54 -> node772
+  node770 -> node771
+  node769 -> node770
+  node57 -> node770
+  node768 -> node769
+  node767 -> node769
+  node766 -> node767
+  node763 -> node767
+  node756 -> node766
+  node765 -> node766
+  node757 -> node765
+  node764 -> node765
+  node762 -> node763
+  node761 -> node762
+  node60 -> node762
+  node760 -> node761
+  node759 -> node760
+  node61 -> node760
+  node756 -> node759
+  node758 -> node759
+  node757 -> node758
+  node62 -> node758
+  node756 -> node757
+  node755 -> node756
+  node746 -> node756
+  node754 -> node755
+  node749 -> node755
+  node753 -> node754
+  node752 -> node754
+  node751 -> node752
+  node750 -> node752
+  node748 -> node749
+  node747 -> node749
+  node745 -> node746
+  node63 -> node746
+  node744 -> node745
+  node743 -> node744
+  node66 -> node744
+  node742 -> node743
+  node741 -> node743
+  node740 -> node741
+  node737 -> node741
+  node730 -> node740
+  node739 -> node740
+  node731 -> node739
+  node738 -> node739
+  node736 -> node737
+  node735 -> node736
+  node69 -> node736
+  node734 -> node735
+  node733 -> node734
+  node70 -> node734
+  node730 -> node733
+  node732 -> node733
+  node731 -> node732
+  node71 -> node732
+  node730 -> node731
+  node729 -> node730
+  node720 -> node730
+  node728 -> node729
+  node723 -> node729
+  node727 -> node728
+  node726 -> node728
+  node725 -> node726
+  node724 -> node726
+  node722 -> node723
+  node721 -> node723
+  node719 -> node720
+  node72 -> node720
+  node718 -> node719
+  node717 -> node718
+  node75 -> node718
+  node716 -> node717
+  node715 -> node717
+  node714 -> node715
+  node711 -> node715
+  node704 -> node714
+  node713 -> node714
+  node705 -> node713
+  node712 -> node713
+  node710 -> node711
+  node709 -> node710
+  node78 -> node710
+  node708 -> node709
+  node707 -> node708
+  node79 -> node708
+  node704 -> node707
+  node706 -> node707
+  node705 -> node706
+  node80 -> node706
+  node704 -> node705
+  node703 -> node704
+  node694 -> node704
+  node702 -> node703
+  node697 -> node703
+  node701 -> node702
+  node700 -> node702
+  node699 -> node700
+  node698 -> node700
+  node696 -> node697
+  node695 -> node697
+  node693 -> node694
+  node81 -> node694
+  node692 -> node693
+  node691 -> node692
+  node84 -> node692
+  node690 -> node691
+  node689 -> node691
+  node688 -> node689
+  node685 -> node689
+  node678 -> node688
+  node687 -> node688
+  node679 -> node687
+  node686 -> node687
+  node684 -> node685
+  node683 -> node684
+  node87 -> node684
+  node682 -> node683
+  node681 -> node682
+  node88 -> node682
+  node678 -> node681
+  node680 -> node681
+  node679 -> node680
+  node89 -> node680
+  node678 -> node679
+  node677 -> node678
+  node668 -> node678
+  node676 -> node677
+  node671 -> node677
+  node675 -> node676
+  node674 -> node676
+  node673 -> node674
+  node672 -> node674
+  node670 -> node671
+  node669 -> node671
+  node667 -> node668
+  node90 -> node668
+  node666 -> node667
+  node665 -> node666
+  node93 -> node666
+  node664 -> node665
+  node663 -> node665
+  node662 -> node663
+  node659 -> node663
+  node652 -> node662
+  node661 -> node662
+  node653 -> node661
+  node660 -> node661
+  node658 -> node659
+  node657 -> node658
+  node96 -> node658
+  node656 -> node657
+  node655 -> node656
+  node97 -> node656
+  node652 -> node655
+  node654 -> node655
+  node653 -> node654
+  node98 -> node654
+  node652 -> node653
+  node651 -> node652
+  node642 -> node652
+  node650 -> node651
+  node645 -> node651
+  node649 -> node650
+  node648 -> node650
+  node647 -> node648
+  node646 -> node648
+  node644 -> node645
+  node643 -> node645
+  node641 -> node642
+  node99 -> node642
+  node640 -> node641
+  node639 -> node640
+  node102 -> node640
+  node638 -> node639
+  node637 -> node639
+  node636 -> node637
+  node633 -> node637
+  node626 -> node636
+  node635 -> node636
+  node627 -> node635
+  node634 -> node635
+  node632 -> node633
+  node631 -> node632
+  node105 -> node632
+  node630 -> node631
+  node629 -> node630
+  node106 -> node630
+  node626 -> node629
+  node628 -> node629
+  node627 -> node628
+  node107 -> node628
+  node626 -> node627
+  node625 -> node626
+  node616 -> node626
+  node624 -> node625
+  node619 -> node625
+  node623 -> node624
+  node622 -> node624
+  node621 -> node622
+  node620 -> node622
+  node618 -> node619
+  node617 -> node619
+  node615 -> node616
+  node108 -> node616
+  node614 -> node615
+  node613 -> node614
+  node111 -> node614
+  node612 -> node613
+  node611 -> node613
+  node610 -> node611
+  node607 -> node611
+  node600 -> node610
+  node609 -> node610
+  node601 -> node609
+  node608 -> node609
+  node606 -> node607
+  node605 -> node606
+  node114 -> node606
+  node604 -> node605
+  node603 -> node604
+  node115 -> node604
+  node600 -> node603
+  node602 -> node603
+  node601 -> node602
+  node116 -> node602
+  node600 -> node601
+  node599 -> node600
+  node590 -> node600
+  node598 -> node599
+  node593 -> node599
+  node597 -> node598
+  node596 -> node598
+  node595 -> node596
+  node594 -> node596
+  node592 -> node593
+  node591 -> node593
+  node589 -> node590
+  node117 -> node590
+  node588 -> node589
+  node587 -> node588
+  node120 -> node588
+  node586 -> node587
+  node585 -> node587
+  node584 -> node585
+  node581 -> node585
+  node574 -> node584
+  node583 -> node584
+  node575 -> node583
+  node582 -> node583
+  node580 -> node581
+  node579 -> node580
+  node123 -> node580
+  node578 -> node579
+  node577 -> node578
+  node124 -> node578
+  node574 -> node577
+  node576 -> node577
+  node575 -> node576
+  node125 -> node576
+  node574 -> node575
+  node573 -> node574
+  node564 -> node574
+  node572 -> node573
+  node567 -> node573
+  node571 -> node572
+  node570 -> node572
+  node569 -> node570
+  node568 -> node570
+  node566 -> node567
+  node565 -> node567
+  node563 -> node564
+  node126 -> node564
+  node562 -> node563
+  node561 -> node562
+  node129 -> node562
+  node560 -> node561
+  node559 -> node561
+  node558 -> node559
+  node555 -> node559
+  node548 -> node558
+  node557 -> node558
+  node549 -> node557
+  node556 -> node557
+  node554 -> node555
+  node553 -> node554
+  node132 -> node554
+  node552 -> node553
+  node551 -> node552
+  node133 -> node552
+  node548 -> node551
+  node550 -> node551
+  node549 -> node550
+  node134 -> node550
+  node548 -> node549
+  node547 -> node548
+  node538 -> node548
+  node546 -> node547
+  node541 -> node547
+  node545 -> node546
+  node544 -> node546
+  node543 -> node544
+  node542 -> node544
+  node540 -> node541
+  node539 -> node541
+  node537 -> node538
+  node135 -> node538
+  node536 -> node537
+  node535 -> node536
+  node138 -> node536
+  node534 -> node535
+  node533 -> node535
+  node532 -> node533
+  node529 -> node533
+  node522 -> node532
+  node531 -> node532
+  node523 -> node531
+  node530 -> node531
+  node528 -> node529
+  node527 -> node528
+  node141 -> node528
+  node526 -> node527
+  node525 -> node526
+  node142 -> node526
+  node522 -> node525
+  node524 -> node525
+  node523 -> node524
+  node143 -> node524
+  node522 -> node523
+  node521 -> node522
+  node512 -> node522
+  node520 -> node521
+  node515 -> node521
+  node519 -> node520
+  node518 -> node520
+  node517 -> node518
+  node516 -> node518
+  node514 -> node515
+  node513 -> node515
+  node511 -> node512
+  node144 -> node512
+  node510 -> node511
+  node509 -> node510
+  node147 -> node510
+  node508 -> node509
+  node507 -> node509
+  node506 -> node507
+  node503 -> node507
+  node496 -> node506
+  node505 -> node506
+  node497 -> node505
+  node504 -> node505
+  node502 -> node503
+  node501 -> node502
+  node150 -> node502
+  node500 -> node501
+  node499 -> node500
+  node151 -> node500
+  node496 -> node499
+  node498 -> node499
+  node497 -> node498
+  node152 -> node498
+  node496 -> node497
+  node495 -> node496
+  node486 -> node496
+  node494 -> node495
+  node489 -> node495
+  node493 -> node494
+  node492 -> node494
+  node491 -> node492
+  node490 -> node492
+  node488 -> node489
+  node487 -> node489
+  node485 -> node486
+  node153 -> node486
+  node484 -> node485
+  node483 -> node484
+  node156 -> node484
+  node482 -> node483
+  node481 -> node483
+  node480 -> node481
+  node477 -> node481
+  node470 -> node480
+  node479 -> node480
+  node471 -> node479
+  node478 -> node479
+  node476 -> node477
+  node475 -> node476
+  node159 -> node476
+  node474 -> node475
+  node473 -> node474
+  node160 -> node474
+  node470 -> node473
+  node472 -> node473
+  node471 -> node472
+  node161 -> node472
+  node470 -> node471
+  node469 -> node470
+  node460 -> node470
+  node468 -> node469
+  node463 -> node469
+  node467 -> node468
+  node466 -> node468
+  node465 -> node466
+  node464 -> node466
+  node462 -> node463
+  node461 -> node463
+  node459 -> node460
+  node162 -> node460
+  node458 -> node459
+  node457 -> node458
+  node165 -> node458
+  node456 -> node457
+  node455 -> node457
+  node454 -> node455
+  node451 -> node455
+  node444 -> node454
+  node453 -> node454
+  node445 -> node453
+  node452 -> node453
+  node450 -> node451
+  node449 -> node450
+  node168 -> node450
+  node448 -> node449
+  node447 -> node448
+  node169 -> node448
+  node444 -> node447
+  node446 -> node447
+  node445 -> node446
+  node170 -> node446
+  node444 -> node445
+  node443 -> node444
+  node434 -> node444
+  node442 -> node443
+  node437 -> node443
+  node441 -> node442
+  node440 -> node442
+  node439 -> node440
+  node438 -> node440
+  node436 -> node437
+  node435 -> node437
+  node433 -> node434
+  node171 -> node434
+  node432 -> node433
+  node431 -> node432
+  node174 -> node432
+  node430 -> node431
+  node429 -> node431
+  node428 -> node429
+  node425 -> node429
+  node418 -> node428
+  node427 -> node428
+  node419 -> node427
+  node426 -> node427
+  node424 -> node425
+  node423 -> node424
+  node177 -> node424
+  node422 -> node423
+  node421 -> node422
+  node178 -> node422
+  node418 -> node421
+  node420 -> node421
+  node419 -> node420
+  node179 -> node420
+  node418 -> node419
+  node417 -> node418
+  node408 -> node418
+  node416 -> node417
+  node411 -> node417
+  node415 -> node416
+  node414 -> node416
+  node413 -> node414
+  node412 -> node414
+  node410 -> node411
+  node409 -> node411
+  node407 -> node408
+  node180 -> node408
+  node406 -> node407
+  node405 -> node406
+  node183 -> node406
+  node404 -> node405
+  node403 -> node405
+  node402 -> node403
+  node399 -> node403
+  node392 -> node402
+  node401 -> node402
+  node393 -> node401
+  node400 -> node401
+  node398 -> node399
+  node397 -> node398
+  node186 -> node398
+  node396 -> node397
+  node395 -> node396
+  node187 -> node396
+  node392 -> node395
+  node394 -> node395
+  node393 -> node394
+  node188 -> node394
+  node392 -> node393
+  node391 -> node392
+  node382 -> node392
+  node390 -> node391
+  node385 -> node391
+  node389 -> node390
+  node388 -> node390
+  node387 -> node388
+  node386 -> node388
+  node384 -> node385
+  node383 -> node385
+  node381 -> node382
+  node189 -> node382
+  node380 -> node381
+  node379 -> node380
+  node192 -> node380
+  node378 -> node379
+  node377 -> node379
+  node376 -> node377
+  node373 -> node377
+  node366 -> node376
+  node375 -> node376
+  node367 -> node375
+  node374 -> node375
+  node372 -> node373
+  node371 -> node372
+  node195 -> node372
+  node370 -> node371
+  node369 -> node370
+  node196 -> node370
+  node366 -> node369
+  node368 -> node369
+  node367 -> node368
+  node197 -> node368
+  node366 -> node367
+  node365 -> node366
+  node356 -> node366
+  node364 -> node365
+  node359 -> node365
+  node363 -> node364
+  node362 -> node364
+  node361 -> node362
+  node360 -> node362
+  node358 -> node359
+  node357 -> node359
+  node355 -> node356
+  node198 -> node356
+  node354 -> node355
+  node353 -> node354
+  node201 -> node354
+  node352 -> node353
+  node351 -> node353
+  node350 -> node351
+  node347 -> node351
+  node340 -> node350
+  node349 -> node350
+  node341 -> node349
+  node348 -> node349
+  node346 -> node347
+  node345 -> node346
+  node204 -> node346
+  node344 -> node345
+  node343 -> node344
+  node205 -> node344
+  node340 -> node343
+  node342 -> node343
+  node341 -> node342
+  node206 -> node342
+  node340 -> node341
+  node339 -> node340
+  node330 -> node340
+  node338 -> node339
+  node333 -> node339
+  node337 -> node338
+  node336 -> node338
+  node335 -> node336
+  node334 -> node336
+  node332 -> node333
+  node331 -> node333
+  node329 -> node330
+  node207 -> node330
+  node328 -> node329
+  node327 -> node328
+  node210 -> node328
+  node326 -> node327
+  node325 -> node327
+  node324 -> node325
+  node321 -> node325
+  node314 -> node324
+  node323 -> node324
+  node315 -> node323
+  node322 -> node323
+  node320 -> node321
+  node319 -> node320
+  node213 -> node320
+  node318 -> node319
+  node317 -> node318
+  node214 -> node318
+  node314 -> node317
+  node316 -> node317
+  node315 -> node316
+  node215 -> node316
+  node314 -> node315
+  node313 -> node314
+  node304 -> node314
+  node312 -> node313
+  node307 -> node313
+  node311 -> node312
+  node310 -> node312
+  node309 -> node310
+  node308 -> node310
+  node306 -> node307
+  node305 -> node307
+  node303 -> node304
+  node216 -> node304
+  node302 -> node303
+  node301 -> node302
+  node219 -> node302
+  node300 -> node301
+  node299 -> node301
+  node298 -> node299
+  node295 -> node299
+  node288 -> node298
+  node297 -> node298
+  node289 -> node297
+  node296 -> node297
+  node294 -> node295
+  node293 -> node294
+  node222 -> node294
+  node292 -> node293
+  node291 -> node292
+  node223 -> node292
+  node288 -> node291
+  node290 -> node291
+  node289 -> node290
+  node224 -> node290
+  node288 -> node289
+  node287 -> node288
+  node278 -> node288
+  node286 -> node287
+  node281 -> node287
+  node285 -> node286
+  node284 -> node286
+  node283 -> node284
+  node282 -> node284
+  node280 -> node281
+  node279 -> node281
+  node277 -> node278
+  node225 -> node278
+  node276 -> node277
+  node275 -> node276
+  node228 -> node276
+  node274 -> node275
+  node231 -> node275
+  node273 -> node274
+  node272 -> node274
+  node271 -> node272
+  node268 -> node272
+  node261 -> node271
+  node270 -> node271
+  node262 -> node270
+  node269 -> node270
+  node267 -> node268
+  node266 -> node267
+  node234 -> node267
+  node265 -> node266
+  node264 -> node265
+  node235 -> node265
+  node261 -> node264
+  node263 -> node264
+  node262 -> node263
+  node236 -> node263
+  node261 -> node262
+  node260 -> node261
+  node244 -> node261
+  node259 -> node260
+  node253 -> node260
+  node258 -> node259
+  node257 -> node258
+  node256 -> node258
+  node255 -> node256
+  node254 -> node255
+  node252 -> node253
+  node245 -> node253
+  node251 -> node252
+  node250 -> node251
+  node249 -> node251
+  node248 -> node249
+  node247 -> node248
+  node246 -> node247
+  node243 -> node244
+  node237 -> node244
+  node242 -> node243
+  node241 -> node242
+  node240 -> node242
+  node239 -> node240
+  node238 -> node239
+  node233 -> node234
+  node232 -> node234
+  node230 -> node231
+  node229 -> node231
+  node227 -> node228
+  node226 -> node228
+  node221 -> node222
+  node220 -> node222
+  node218 -> node219
+  node217 -> node219
+  node212 -> node213
+  node211 -> node213
+  node209 -> node210
+  node208 -> node210
+  node203 -> node204
+  node202 -> node204
+  node200 -> node201
+  node199 -> node201
+  node194 -> node195
+  node193 -> node195
+  node191 -> node192
+  node190 -> node192
+  node185 -> node186
+  node184 -> node186
+  node182 -> node183
+  node181 -> node183
+  node176 -> node177
+  node175 -> node177
+  node173 -> node174
+  node172 -> node174
+  node167 -> node168
+  node166 -> node168
+  node164 -> node165
+  node163 -> node165
+  node158 -> node159
+  node157 -> node159
+  node155 -> node156
+  node154 -> node156
+  node149 -> node150
+  node148 -> node150
+  node146 -> node147
+  node145 -> node147
+  node140 -> node141
+  node139 -> node141
+  node137 -> node138
+  node136 -> node138
+  node131 -> node132
+  node130 -> node132
+  node128 -> node129
+  node127 -> node129
+  node122 -> node123
+  node121 -> node123
+  node119 -> node120
+  node118 -> node120
+  node113 -> node114
+  node112 -> node114
+  node110 -> node111
+  node109 -> node111
+  node104 -> node105
+  node103 -> node105
+  node101 -> node102
+  node100 -> node102
+  node95 -> node96
+  node94 -> node96
+  node92 -> node93
+  node91 -> node93
+  node86 -> node87
+  node85 -> node87
+  node83 -> node84
+  node82 -> node84
+  node77 -> node78
+  node76 -> node78
+  node74 -> node75
+  node73 -> node75
+  node68 -> node69
+  node67 -> node69
+  node65 -> node66
+  node64 -> node66
+  node59 -> node60
+  node58 -> node60
+  node56 -> node57
+  node55 -> node57
+  node50 -> node51
+  node49 -> node51
+  node47 -> node48
+  node46 -> node48
+  node41 -> node42
+  node40 -> node42
+  node38 -> node39
+  node37 -> node39
+  node32 -> node33
+  node31 -> node33
+  node29 -> node30
+  node28 -> node30
+  node23 -> node24
+  node22 -> node24
+  node20 -> node21
+  node19 -> node21
+  node14 -> node15
+  node13 -> node15
+  node11 -> node12
+  node10 -> node12
+  node8 -> node9
+  node5 -> node6
+  node4 -> node6
+  node2 -> node3
+}
+
