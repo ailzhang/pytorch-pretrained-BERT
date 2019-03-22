@@ -1,0 +1,709 @@
+03/21/2019 22:36:14 - INFO - pytorch_pretrained_bert.tokenization -   loading vocabulary file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/ubuntu/.pytorch_pretrained_bert/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+03/21/2019 22:36:15 - INFO - pytorch_pretrained_bert.modeling -   loading archive file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased.tar.gz from cache at /home/ubuntu/.pytorch_pretrained_bert/distributed_-1/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba
+03/21/2019 22:36:15 - INFO - pytorch_pretrained_bert.modeling -   extracting archive file /home/ubuntu/.pytorch_pretrained_bert/distributed_-1/9c41111e2de84547a463fd39217199738d1e3deb72d4fec4399e6e241983c6f0.ae3cef932725ca7a30cdcb93fc6e09150a55e2a130ec7af63975a16c153ae2ba to temp dir /tmp/tmpayn6ocoh
+03/21/2019 22:36:20 - INFO - pytorch_pretrained_bert.modeling -   Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "max_position_embeddings": 512,
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+03/21/2019 22:36:51 - INFO - pytorch_pretrained_bert.modeling -   Weights of BertForMultipleChoice not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+03/21/2019 22:36:51 - INFO - pytorch_pretrained_bert.modeling -   Weights from pretrained model not used in BertForMultipleChoice: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+03/21/2019 22:36:53 - INFO - __main__ -   *** Example ***
+03/21/2019 22:36:53 - INFO - __main__ -   swag_id: 3416
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 0
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] members of the procession walk down the street holding small horn brass instruments . [SEP] a drum line passes by walking down the street playing their instruments . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 2372 1997 1996 14385 3328 2091 1996 2395 3173 2235 7109 8782 5693 1012 102 1037 6943 2240 5235 2011 3788 2091 1996 2395 2652 2037 5693 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 1
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] members of the procession walk down the street holding small horn brass instruments . [SEP] a drum line has heard approaching them . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 2372 1997 1996 14385 3328 2091 1996 2395 3173 2235 7109 8782 5693 1012 102 1037 6943 2240 2038 2657 8455 2068 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 2
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] members of the procession walk down the street holding small horn brass instruments . [SEP] a drum line arrives and they ' re outside dancing and asleep . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 2372 1997 1996 14385 3328 2091 1996 2395 3173 2235 7109 8782 5693 1012 102 1037 6943 2240 8480 1998 2027 1005 2128 2648 5613 1998 6680 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 3
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] members of the procession walk down the street holding small horn brass instruments . [SEP] a drum line turns the lead singer watches the performance . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 2372 1997 1996 14385 3328 2091 1996 2395 3173 2235 7109 8782 5693 1012 102 1037 6943 2240 4332 1996 2599 3220 12197 1996 2836 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   label: 0
+03/21/2019 22:36:53 - INFO - __main__ -   *** Example ***
+03/21/2019 22:36:53 - INFO - __main__ -   swag_id: 3417
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 0
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] a drum line passes by walking down the street playing their instruments . [SEP] members of the procession are playing ping po ##ng and celebrating one left each in quick . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1037 6943 2240 5235 2011 3788 2091 1996 2395 2652 2037 5693 1012 102 2372 1997 1996 14385 2024 2652 17852 13433 3070 1998 12964 2028 2187 2169 1999 4248 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 1
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] a drum line passes by walking down the street playing their instruments . [SEP] members of the procession wait slowly towards the cadets . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1037 6943 2240 5235 2011 3788 2091 1996 2395 2652 2037 5693 1012 102 2372 1997 1996 14385 3524 3254 2875 1996 15724 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 2
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] a drum line passes by walking down the street playing their instruments . [SEP] members of the procession continues to play as well along the crowd along with the band being interviewed . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1037 6943 2240 5235 2011 3788 2091 1996 2395 2652 2037 5693 1012 102 2372 1997 1996 14385 4247 2000 2377 2004 2092 2247 1996 4306 2247 2007 1996 2316 2108 10263 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 3
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] a drum line passes by walking down the street playing their instruments . [SEP] members of the procession continue to play marching , interspersed . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1037 6943 2240 5235 2011 3788 2091 1996 2395 2652 2037 5693 1012 102 2372 1997 1996 14385 3613 2000 2377 10998 1010 25338 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   label: 3
+03/21/2019 22:36:53 - INFO - __main__ -   *** Example ***
+03/21/2019 22:36:53 - INFO - __main__ -   swag_id: 3415
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 0
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] a group of members in green uniforms walks waving flags . [SEP] members of the procession pay the other coaches to cheer as people this chatter dip ##s in lawn sheets . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1037 2177 1997 2372 1999 2665 11408 7365 12015 9245 1012 102 2372 1997 1996 14385 3477 1996 2060 7850 2000 15138 2004 2111 2023 24691 16510 2015 1999 10168 8697 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 1
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] a group of members in green uniforms walks waving flags . [SEP] members of the procession walk down the street holding small horn brass instruments . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1037 2177 1997 2372 1999 2665 11408 7365 12015 9245 1012 102 2372 1997 1996 14385 3328 2091 1996 2395 3173 2235 7109 8782 5693 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 2
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] a group of members in green uniforms walks waving flags . [SEP] members of the procession is seen in the background . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1037 2177 1997 2372 1999 2665 11408 7365 12015 9245 1012 102 2372 1997 1996 14385 2003 2464 1999 1996 4281 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 3
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] a group of members in green uniforms walks waving flags . [SEP] members of the procession are talking a couple of people playing a game of tug of war . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1037 2177 1997 2372 1999 2665 11408 7365 12015 9245 1012 102 2372 1997 1996 14385 2024 3331 1037 3232 1997 2111 2652 1037 2208 1997 12888 1997 2162 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   label: 1
+03/21/2019 22:36:53 - INFO - __main__ -   *** Example ***
+03/21/2019 22:36:53 - INFO - __main__ -   swag_id: 3417
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 0
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] a drum line passes by walking down the street playing their instruments . [SEP] members of the procession are playing ping po ##ng and celebrating one left each in quick . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1037 6943 2240 5235 2011 3788 2091 1996 2395 2652 2037 5693 1012 102 2372 1997 1996 14385 2024 2652 17852 13433 3070 1998 12964 2028 2187 2169 1999 4248 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 1
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] a drum line passes by walking down the street playing their instruments . [SEP] members of the procession wait slowly towards the cadets . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1037 6943 2240 5235 2011 3788 2091 1996 2395 2652 2037 5693 1012 102 2372 1997 1996 14385 3524 3254 2875 1996 15724 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 2
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] a drum line passes by walking down the street playing their instruments . [SEP] members of the procession makes a square call and ends by jumping down into snowy streets where fans begin to take their positions . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1037 6943 2240 5235 2011 3788 2091 1996 2395 2652 2037 5693 1012 102 2372 1997 1996 14385 3084 1037 2675 2655 1998 4515 2011 8660 2091 2046 20981 4534 2073 4599 4088 2000 2202 2037 4460 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 3
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] a drum line passes by walking down the street playing their instruments . [SEP] members of the procession play and go back and forth hitting the drums while the audience clap ##s for them . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1037 6943 2240 5235 2011 3788 2091 1996 2395 2652 2037 5693 1012 102 2372 1997 1996 14385 2377 1998 2175 2067 1998 5743 7294 1996 3846 2096 1996 4378 28618 2015 2005 2068 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   label: 3
+03/21/2019 22:36:53 - INFO - __main__ -   *** Example ***
+03/21/2019 22:36:53 - INFO - __main__ -   swag_id: 2408
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 0
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] the person plays a song on the violin . [SEP] the man finishes the song and lowers the instrument . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1996 2711 3248 1037 2299 2006 1996 6710 1012 102 1996 2158 12321 1996 2299 1998 24950 1996 6602 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 1
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] the person plays a song on the violin . [SEP] the man hits the saxophone and demonstrates how to properly use the ra ##c ##quet . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1996 2711 3248 1037 2299 2006 1996 6710 1012 102 1996 2158 4978 1996 8283 1998 16691 2129 2000 7919 2224 1996 10958 2278 12647 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 2
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] the person plays a song on the violin . [SEP] the man finishes massage the instrument again and continues . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1996 2711 3248 1037 2299 2006 1996 6710 1012 102 1996 2158 12321 21881 1996 6602 2153 1998 4247 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   choice: 3
+03/21/2019 22:36:53 - INFO - __main__ -   tokens: [CLS] the person plays a song on the violin . [SEP] the man continues dancing while the man gore the music outside while drums . [SEP]
+03/21/2019 22:36:53 - INFO - __main__ -   input_ids: 101 1996 2711 3248 1037 2299 2006 1996 6710 1012 102 1996 2158 4247 5613 2096 1996 2158 13638 1996 2189 2648 2096 3846 1012 102 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   input_mask: 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   segment_ids: 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+03/21/2019 22:36:53 - INFO - __main__ -   label: 0
+03/21/2019 22:38:00 - INFO - __main__ -   ***** Running training *****
+03/21/2019 22:38:00 - INFO - __main__ -     Num examples = 73546
+03/21/2019 22:38:00 - INFO - __main__ -     Batch size = 16
+03/21/2019 22:38:00 - INFO - __main__ -     Num steps = 13788
+03/21/2019 22:38:03 - INFO - __main__ -   test before train
+03/21/2019 22:38:03 - INFO - __main__ -   test
+03/21/2019 22:39:10 - INFO - __main__ -   test forward
+03/21/2019 22:51:38 - INFO - __main__ -   DONE 1 optimizer step
+03/21/2019 22:51:38 - INFO - __main__ -   Metric: CompileTime
+  TotalSamples: 362
+  Counter: 10m47s404ms778.683us
+  ValueRate: 722ms77.374us / second
+  Rate: 0.444995 / second
+  Percentiles: 1%=96.243us; 5%=153.796us; 10%=198.907us; 20%=274.965us; 50%=867ms624.801us; 80%=04s502ms492.070us; 90%=04s440ms778.523us; 95%=05s822ms595.318us; 99%=05s475ms328.470us
+Metric: ExecuteParallelTime
+  TotalSamples: 361
+  Counter: 03m56s558ms290.738us
+  ValueRate: 219ms816.281us / second
+  Rate: 0.449951 / second
+  Percentiles: 1%=002ms173.887us; 5%=002ms453.200us; 10%=003ms794.939us; 20%=004ms523.758us; 50%=095ms504.048us; 80%=01s175ms369.090us; 90%=02s570ms564.067us; 95%=02s824ms74.740us; 99%=02s952ms279.417us
+Metric: InboundData
+  TotalSamples: 361
+  Counter: 3.05GB
+  ValueRate: 3.89MB / second
+  Rate: 0.450057 / second
+  Percentiles: 1%=4.00B; 5%=4.00B; 10%=4.00B; 20%=4.00B; 50%=4.00B; 80%=15.00MB; 90%=18.75MB; 95%=18.75MB; 99%=60.00MB
+Metric: OutboundData
+  TotalSamples: 365
+  Counter: 3.50GB
+  ValueRate: 17.41MB / second
+  Rate: 1.77294 / second
+  Percentiles: 1%=3.00KB; 5%=3.00KB; 10%=3.00KB; 20%=3.00KB; 50%=9.00MB; 80%=15.00MB; 90%=18.75MB; 95%=18.75MB; 99%=60.00MB
+Metric: ReleaseCompileHandlesTime
+  TotalSamples: 174
+  Counter: 393ms130.504us
+  ValueRate: 579.259us / second
+  Rate: 0.256381 / second
+  Percentiles: 1%=857.216us; 5%=913.980us; 10%=966.039us; 20%=001ms20.175us; 50%=001ms143.574us; 80%=001ms283.520us; 90%=001ms342.713us; 95%=001ms442.210us; 99%=057ms662.041us
+Metric: ReleaseDataHandlesTime
+  TotalSamples: 384
+  Counter: 577ms844.213us
+  ValueRate: 719.186us / second
+  Rate: 0.478756 / second
+  Percentiles: 1%=552.932us; 5%=652.996us; 10%=695.494us; 20%=764.571us; 50%=001ms36.816us; 80%=001ms438.737us; 90%=002ms521.039us; 95%=002ms617.879us; 99%=012ms694.101us
+Metric: TransferFromServerTime
+  TotalSamples: 361
+  Counter: 19s526ms40.867us
+  ValueRate: 023ms96.307us / second
+  Rate: 0.450057 / second
+  Percentiles: 1%=983.120us; 5%=001ms256.457us; 10%=001ms465.777us; 20%=002ms725.927us; 50%=002ms287.042us; 80%=076ms851.532us; 90%=113ms565.797us; 95%=138ms389.472us; 99%=551ms961.443us
+Metric: TransferToServerTime
+  TotalSamples: 365
+  Counter: 14s171ms224.138us
+  ValueRate: 069ms968.052us / second
+  Rate: 1.77637 / second
+  Percentiles: 1%=763.408us; 5%=898.524us; 10%=983.639us; 20%=001ms141.861us; 50%=032ms557.726us; 80%=060ms411.550us; 90%=085ms691.776us; 95%=131ms743.894us; 99%=280ms990.688us
+Counter: CreateCompileHandles
+  Value: 238
+Counter: CreateDataHandles
+  Value: 727
+Counter: DestroyCompileHandles
+  Value: 174
+Counter: DestroyDataHandles
+  Value: 385
+Counter: ReleaseCompileHandles
+  Value: 174
+Counter: ReleaseDataHandles
+  Value: 385
+Counter: UncachedSyncTensors
+  Value: 1
+Counter: XRTAllocateFromTensor_Empty
+  Value: 17
+Counter: XrtCompile_Empty
+  Value: 256
+Counter: XrtExecute_Empty
+  Value: 256
+Counter: XrtRead_Empty
+  Value: 256
+Counter: XrtReleaseAllocationHandle_Empty
+  Value: 256
+Counter: XrtReleaseCompileHandle_Empty
+  Value: 256
+Counter: XrtSessionCount
+  Value: 3
+Counter: XrtSubTuple_Empty
+  Value: 256
+Counter: aten::_local_scalar_dense
+  Value: 200
+Counter: aten::_softmax
+  Value: 12
+Counter: aten::_unsafe_view
+  Value: 108
+Counter: aten::bernoulli_
+  Value: 38
+Counter: aten::embedding_dense_backward
+  Value: 3
+
+03/21/2019 23:01:02 - INFO - __main__ -   DONE 1 optimizer step
+03/21/2019 23:01:02 - INFO - __main__ -   Metric: CompileTime
+  TotalSamples: 724
+  Counter: 18m13s554ms780.313us
+  ValueRate: 793ms841.485us / second
+  Rate: 0.52539 / second
+  Percentiles: 1%=105.652us; 5%=140.740us; 10%=190.809us; 20%=268.757us; 50%=639ms582.012us; 80%=03s454ms214.880us; 90%=04s333ms69.685us; 95%=05s713ms848.109us; 99%=05s319ms732.663us
+Metric: ExecuteParallelTime
+  TotalSamples: 722
+  Counter: 03m05s349ms42.190us
+  ValueRate: 136ms574.792us / second
+  Rate: 0.528112 / second
+  Percentiles: 1%=002ms164.773us; 5%=002ms417.604us; 10%=003ms763.164us; 20%=003ms318.146us; 50%=021ms197.199us; 80%=290ms543.026us; 90%=01s175ms369.090us; 95%=02s570ms564.067us; 99%=02s920ms319.261us
+Metric: ExecuteTime
+  TotalSamples: 1
+  Counter: 04s136ms48.141us
+  Percentiles: 1%=04s136ms48.141us; 5%=04s136ms48.141us; 10%=04s136ms48.141us; 20%=04s136ms48.141us; 50%=04s136ms48.141us; 80%=04s136ms48.141us; 90%=04s136ms48.141us; 95%=04s136ms48.141us; 99%=04s136ms48.141us
+Metric: InboundData
+  TotalSamples: 722
+  Counter: 6.09GB
+  ValueRate: 4.57MB / second
+  Rate: 0.528184 / second
+  Percentiles: 1%=4.00B; 5%=4.00B; 10%=4.00B; 20%=4.00B; 50%=4.00B; 80%=15.00MB; 90%=18.75MB; 95%=18.75MB; 99%=60.00MB
+Metric: OutboundData
+  TotalSamples: 530
+  Counter: 6.59GB
+  ValueRate: 7.23MB / second
+  Rate: 0.567535 / second
+  Percentiles: 1%=3.00KB; 5%=3.00KB; 10%=3.00KB; 20%=3.00KB; 50%=15.00MB; 80%=18.75MB; 90%=18.75MB; 95%=60.00MB; 99%=60.00MB
+Metric: ReleaseCompileHandlesTime
+  TotalSamples: 411
+  Counter: 668ms568.996us
+  ValueRate: 536.973us / second
+  Rate: 0.330597 / second
+  Percentiles: 1%=704.858us; 5%=779.143us; 10%=842.052us; 20%=913.144us; 50%=001ms51.621us; 80%=001ms222.185us; 90%=001ms291.901us; 95%=001ms351.331us; 99%=004ms975.856us
+Metric: ReleaseDataHandlesTime
+  TotalSamples: 778
+  Counter: 02s159ms73.873us
+  ValueRate: 002ms579.534us / second
+  Rate: 0.569169 / second
+  Percentiles: 1%=524.059us; 5%=590.631us; 10%=643.043us; 20%=708.935us; 50%=001ms7.548us; 80%=001ms406.730us; 90%=002ms507.714us; 95%=002ms617.018us; 99%=124ms65.770us
+Metric: TransferFromServerTime
+  TotalSamples: 722
+  Counter: 32s648ms462.944us
+  ValueRate: 023ms152.658us / second
+  Rate: 0.528184 / second
+  Percentiles: 1%=974.632us; 5%=001ms139.061us; 10%=001ms274.494us; 20%=001ms485.717us; 50%=002ms140.837us; 80%=063ms645.783us; 90%=096ms906.688us; 95%=134ms383.088us; 99%=522ms213.955us
+Metric: TransferToServerTime
+  TotalSamples: 530
+  Counter: 29s156ms8.758us
+  ValueRate: 031ms220.351us / second
+  Rate: 0.567526 / second
+  Percentiles: 1%=789.213us; 5%=938.436us; 10%=001ms34.264us; 20%=002ms552.781us; 50%=035ms882.842us; 80%=063ms929.418us; 90%=096ms281.437us; 95%=235ms679.284us; 99%=280ms990.688us
+Counter: CreateCompileHandles
+  Value: 476
+Counter: CreateDataHandles
+  Value: 2050
+Counter: DestroyCompileHandles
+  Value: 411
+Counter: DestroyDataHandles
+  Value: 1126
+Counter: ReleaseCompileHandles
+  Value: 411
+Counter: ReleaseDataHandles
+  Value: 1178
+Counter: UncachedSyncTensors
+  Value: 2
+Counter: XRTAllocateFromTensor_Empty
+  Value: 17
+Counter: XrtCompile_Empty
+  Value: 1024
+Counter: XrtExecute_Empty
+  Value: 1018
+Counter: XrtRead_Empty
+  Value: 1008
+Counter: XrtReleaseAllocationHandle_Empty
+  Value: 1008
+Counter: XrtReleaseCompileHandle_Empty
+  Value: 1008
+Counter: XrtSessionCount
+  Value: 9
+Counter: XrtSubTuple_Empty
+  Value: 1008
+Counter: aten::_local_scalar_dense
+  Value: 400
+Counter: aten::_softmax
+  Value: 24
+Counter: aten::_unsafe_view
+  Value: 216
+Counter: aten::bernoulli_
+  Value: 76
+Counter: aten::embedding_dense_backward
+  Value: 6
+
+03/21/2019 23:02:18 - INFO - __main__ -   DONE 1 optimizer step
+03/21/2019 23:02:18 - INFO - __main__ -   Metric: CompileTime
+  TotalSamples: 1086
+  Counter: 19m30s165ms109.385us
+  ValueRate: 772ms884.998us / second
+  Rate: 0.718588 / second
+  Percentiles: 1%=108.154us; 5%=144.903us; 10%=214.542us; 20%=303.630us; 50%=029ms308.090us; 80%=03s611ms640.877us; 90%=04s895ms532.065us; 95%=05s562ms911.122us; 99%=05s120ms474.065us
+Metric: ExecuteParallelTime
+  TotalSamples: 1083
+  Counter: 03m14s594ms473.028us
+  ValueRate: 136ms209.605us / second
+  Rate: 0.72338 / second
+  Percentiles: 1%=002ms146.031us; 5%=002ms408.745us; 10%=003ms776.456us; 20%=003ms330.885us; 50%=015ms557.776us; 80%=083ms34.790us; 90%=798ms606.501us; 95%=01s427ms896.117us; 99%=02s895ms626.182us
+Metric: ExecuteTime
+  TotalSamples: 2
+  Counter: 09s528ms882.402us
+  ValueRate: 015ms99.215us / second
+  Rate: 0.00354114 / second
+  Percentiles: 1%=04s136ms48.141us; 5%=04s136ms48.141us; 10%=04s136ms48.141us; 20%=04s136ms48.141us; 50%=04s392ms834.261us; 80%=04s392ms834.261us; 90%=04s392ms834.261us; 95%=04s392ms834.261us; 99%=04s392ms834.261us
+Metric: InboundData
+  TotalSamples: 1083
+  Counter: 9.14GB
+  ValueRate: 5.79MB / second
+  Rate: 0.723415 / second
+  Percentiles: 1%=4.00B; 5%=4.00B; 10%=4.00B; 20%=4.00B; 50%=4.00B; 80%=15.00MB; 90%=18.75MB; 95%=18.75MB; 99%=60.00MB
+Metric: OutboundData
+  TotalSamples: 695
+  Counter: 9.68GB
+  ValueRate: 6.62MB / second
+  Rate: 0.464081 / second
+  Percentiles: 1%=3.00KB; 5%=3.00KB; 10%=3.00KB; 20%=40.00KB; 50%=15.00MB; 80%=18.75MB; 90%=18.75MB; 95%=60.00MB; 99%=60.00MB
+Metric: ReleaseCompileHandlesTime
+  TotalSamples: 648
+  Counter: 926ms54.897us
+  ValueRate: 702.433us / second
+  Rate: 0.491522 / second
+  Percentiles: 1%=612.205us; 5%=670.883us; 10%=722.435us; 20%=781.302us; 50%=957.416us; 80%=001ms172.304us; 90%=001ms265.316us; 95%=001ms329.074us; 99%=004ms975.856us
+Metric: ReleaseDataHandlesTime
+  TotalSamples: 1194
+  Counter: 12s941ms297.052us
+  ValueRate: 009ms530.850us / second
+  Rate: 0.75472 / second
+  Percentiles: 1%=510.797us; 5%=574.975us; 10%=614.447us; 20%=672.422us; 50%=890.856us; 80%=001ms326.033us; 90%=001ms482.948us; 95%=002ms619.857us; 99%=048ms401.858us
+Metric: TransferFromServerTime
+  TotalSamples: 1083
+  Counter: 45s048ms473.345us
+  ValueRate: 027ms22.588us / second
+  Rate: 0.723415 / second
+  Percentiles: 1%=978.242us; 5%=001ms88.498us; 10%=001ms198.818us; 20%=001ms384.637us; 50%=002ms991.464us; 80%=055ms309.577us; 90%=084ms448.069us; 95%=121ms746.004us; 99%=376ms325.402us
+Metric: TransferToServerTime
+  TotalSamples: 695
+  Counter: 39s353ms502.581us
+  ValueRate: 026ms278.145us / second
+  Rate: 0.464095 / second
+  Percentiles: 1%=789.628us; 5%=970.315us; 10%=001ms125.142us; 20%=005ms308.629us; 50%=036ms705.697us; 80%=063ms949.814us; 90%=094ms84.030us; 95%=237ms742.181us; 99%=280ms990.688us
+Counter: CreateCompileHandles
+  Value: 714
+Counter: CreateDataHandles
+  Value: 3373
+Counter: DestroyCompileHandles
+  Value: 648
+Counter: DestroyDataHandles
+  Value: 2369
+Counter: ReleaseCompileHandles
+  Value: 648
+Counter: ReleaseDataHandles
+  Value: 2369
+Counter: UncachedSyncTensors
+  Value: 3
+Counter: XRTAllocateFromTensor_Empty
+  Value: 17
+Counter: XrtCompile_Empty
+  Value: 1280
+Counter: XrtExecute_Empty
+  Value: 1280
+Counter: XrtRead_Empty
+  Value: 1280
+Counter: XrtReleaseAllocationHandle_Empty
+  Value: 1280
+Counter: XrtReleaseCompileHandle_Empty
+  Value: 1280
+Counter: XrtSessionCount
+  Value: 11
+Counter: XrtSubTuple_Empty
+  Value: 1280
+Counter: aten::_local_scalar_dense
+  Value: 600
+Counter: aten::_softmax
+  Value: 36
+Counter: aten::_unsafe_view
+  Value: 324
+Counter: aten::bernoulli_
+  Value: 114
+Counter: aten::embedding_dense_backward
+  Value: 9
+
+03/21/2019 23:03:34 - INFO - __main__ -   DONE 1 optimizer step
+03/21/2019 23:03:34 - INFO - __main__ -   Metric: CompileTime
+  TotalSamples: 1448
+  Counter: 19m48s109ms738.122us
+  ValueRate: 776ms444.570us / second
+  Rate: 1.47149 / second
+  Percentiles: 1%=112.478us; 5%=154.766us; 10%=229.570us; 20%=306.079us; 50%=021ms409.156us; 80%=049ms449.108us; 90%=03s581ms585.071us; 95%=04s777ms368.399us; 99%=05s815ms876.512us
+Metric: ExecuteParallelTime
+  TotalSamples: 1444
+  Counter: 03m22s921ms371.178us
+  ValueRate: 038ms97.650us / second
+  Rate: 1.49434 / second
+  Percentiles: 1%=002ms105.992us; 5%=002ms377.066us; 10%=003ms738.765us; 20%=003ms299.977us; 50%=010ms924.229us; 80%=054ms82.225us; 90%=070ms893.703us; 95%=078ms737.311us; 99%=088ms357.399us
+Metric: ExecuteTime
+  TotalSamples: 3
+  Counter: 13s884ms636.962us
+  ValueRate: 020ms133.932us / second
+  Rate: 0.00468826 / second
+  Percentiles: 1%=04s136ms48.141us; 5%=04s136ms48.141us; 10%=04s136ms48.141us; 20%=04s136ms48.141us; 50%=04s356ms754.560us; 80%=04s392ms834.261us; 90%=04s392ms834.261us; 95%=04s392ms834.261us; 99%=04s392ms834.261us
+Metric: InboundData
+  TotalSamples: 1444
+  Counter: 12.19GB
+  ValueRate: 11.96MB / second
+  Rate: 1.49444 / second
+  Percentiles: 1%=4.00B; 5%=4.00B; 10%=4.00B; 20%=4.00B; 50%=4.00B; 80%=15.00MB; 90%=18.75MB; 95%=18.75MB; 99%=60.00MB
+Metric: OutboundData
+  TotalSamples: 860
+  Counter: 12.78GB
+  ValueRate: 8.32MB / second
+  Rate: 0.546711 / second
+  Percentiles: 1%=3.00KB; 5%=3.00KB; 10%=3.00KB; 20%=2.25MB; 50%=15.00MB; 80%=18.75MB; 90%=18.75MB; 95%=60.00MB; 99%=60.00MB
+Metric: ReleaseCompileHandlesTime
+  TotalSamples: 885
+  Counter: 01s179ms671.242us
+  ValueRate: 845.321us / second
+  Rate: 0.634705 / second
+  Percentiles: 1%=583.215us; 5%=656.481us; 10%=689.473us; 20%=749.897us; 50%=905.595us; 80%=001ms101.860us; 90%=001ms227.746us; 95%=001ms299.753us; 99%=007ms461.785us
+Metric: ReleaseDataHandlesTime
+  TotalSamples: 1600
+  Counter: 12s357ms143.803us
+  ValueRate: 015ms472.984us / second
+  Rate: 1.53136 / second
+  Percentiles: 1%=510.797us; 5%=565.721us; 10%=602.764us; 20%=655.814us; 50%=836.372us; 80%=001ms318.831us; 90%=001ms464.670us; 95%=002ms607.689us; 99%=024ms696.040us
+Metric: TransferFromServerTime
+  TotalSamples: 1444
+  Counter: 59s576ms8.131us
+  ValueRate: 052ms655.851us / second
+  Rate: 1.49444 / second
+  Percentiles: 1%=963.663us; 5%=001ms84.856us; 10%=001ms176.121us; 20%=001ms308.205us; 50%=002ms785.892us; 80%=051ms430.789us; 90%=069ms929.698us; 95%=097ms71.301us; 99%=376ms831.900us
+Metric: TransferToServerTime
+  TotalSamples: 860
+  Counter: 50s651ms12.842us
+  ValueRate: 032ms564.454us / second
+  Rate: 0.546725 / second
+  Percentiles: 1%=825.704us; 5%=001ms7.615us; 10%=001ms202.997us; 20%=007ms725.987us; 50%=037ms509.730us; 80%=063ms916.699us; 90%=093ms617.613us; 95%=238ms181.625us; 99%=276ms586.258us
+Counter: CreateCompileHandles
+  Value: 952
+Counter: CreateDataHandles
+  Value: 4696
+Counter: DestroyCompileHandles
+  Value: 885
+Counter: DestroyDataHandles
+  Value: 3560
+Counter: ReleaseCompileHandles
+  Value: 885
+Counter: ReleaseDataHandles
+  Value: 3560
+Counter: UncachedSyncTensors
+  Value: 4
+Counter: XRTAllocateFromTensor_Empty
+  Value: 17
+Counter: XrtCompile_Empty
+  Value: 1280
+Counter: XrtExecute_Empty
+  Value: 1280
+Counter: XrtRead_Empty
+  Value: 1280
+Counter: XrtReleaseAllocationHandle_Empty
+  Value: 1280
+Counter: XrtReleaseCompileHandle_Empty
+  Value: 1280
+Counter: XrtSessionCount
+  Value: 11
+Counter: XrtSubTuple_Empty
+  Value: 1280
+Counter: aten::_local_scalar_dense
+  Value: 800
+Counter: aten::_softmax
+  Value: 48
+Counter: aten::_unsafe_view
+  Value: 432
+Counter: aten::bernoulli_
+  Value: 152
+Counter: aten::embedding_dense_backward
+  Value: 12
+
+03/21/2019 23:04:49 - INFO - __main__ -   DONE 1 optimizer step
+03/21/2019 23:04:49 - INFO - __main__ -   Metric: CompileTime
+  TotalSamples: 1810
+  Counter: 19m06s860ms807.549us
+  ValueRate: 257ms578.863us / second
+  Rate: 4.96872 / second
+  Percentiles: 1%=118.305us; 5%=150.574us; 10%=230.342us; 20%=301.725us; 50%=020ms684.218us; 80%=035ms398.803us; 90%=042ms536.447us; 95%=047ms113.318us; 99%=055ms387.360us
+Metric: ExecuteParallelTime
+  TotalSamples: 1805
+  Counter: 04m30s137ms575.443us
+  ValueRate: 126ms591.304us / second
+  Rate: 5.24051 / second
+  Percentiles: 1%=002ms2.191us; 5%=002ms393.526us; 10%=003ms674.148us; 20%=003ms280.053us; 50%=010ms656.421us; 80%=051ms465.586us; 90%=066ms411.721us; 95%=075ms656.787us; 99%=081ms7.797us
+Metric: ExecuteTime
+  TotalSamples: 4
+  Counter: 17s163ms271.014us
+  ValueRate: 024ms977.207us / second
+  Rate: 0.00558803 / second
+  Percentiles: 1%=04s136ms48.141us; 5%=04s136ms48.141us; 10%=04s136ms48.141us; 20%=04s136ms48.141us; 50%=04s356ms754.560us; 80%=04s392ms834.261us; 90%=04s392ms834.261us; 95%=04s392ms834.261us; 99%=04s392ms834.261us
+Metric: InboundData
+  TotalSamples: 1805
+  Counter: 15.24GB
+  ValueRate: 41.95MB / second
+  Rate: 5.24177 / second
+  Percentiles: 1%=4.00B; 5%=4.00B; 10%=4.00B; 20%=4.00B; 50%=4.00B; 80%=15.00MB; 90%=18.75MB; 95%=18.75MB; 99%=60.00MB
+Metric: OutboundData
+  TotalSamples: 1025
+  Counter: 15.87GB
+  ValueRate: 9.81MB / second
+  Rate: 0.621397 / second
+  Percentiles: 1%=3.00KB; 5%=3.00KB; 10%=3.00KB; 20%=2.25MB; 50%=15.00MB; 80%=18.75MB; 90%=18.75MB; 95%=60.00MB; 99%=60.00MB
+Metric: ReleaseCompileHandlesTime
+  TotalSamples: 1122
+  Counter: 01s403ms236.716us
+  ValueRate: 001ms40.788us / second
+  Rate: 0.967451 / second
+  Percentiles: 1%=563.990us; 5%=641.949us; 10%=673.263us; 20%=730.043us; 50%=861.944us; 80%=001ms37.319us; 90%=001ms154.219us; 95%=001ms258.810us; 99%=002ms175.715us
+Metric: ReleaseDataHandlesTime
+  TotalSamples: 2014
+  Counter: 13s770ms416.154us
+  ValueRate: 005ms459.695us / second
+  Rate: 5.71633 / second
+  Percentiles: 1%=512.279us; 5%=572.840us; 10%=612.735us; 20%=666.038us; 50%=833.226us; 80%=001ms298.693us; 90%=001ms423.203us; 95%=002ms541.426us; 99%=002ms850.343us
+Metric: TransferFromServerTime
+  TotalSamples: 1805
+  Counter: 01m11s453ms557.353us
+  ValueRate: 179ms74.685us / second
+  Rate: 5.24177 / second
+  Percentiles: 1%=970.981us; 5%=001ms82.221us; 10%=001ms179.027us; 20%=001ms326.394us; 50%=002ms795.902us; 80%=049ms132.024us; 90%=070ms561.547us; 95%=096ms256.930us; 99%=376ms820.830us
+Metric: TransferToServerTime
+  TotalSamples: 1025
+  Counter: 01m05s530ms125.915us
+  ValueRate: 039ms828.426us / second
+  Rate: 0.621267 / second
+  Percentiles: 1%=831.424us; 5%=001ms31.974us; 10%=001ms393.996us; 20%=015ms230.578us; 50%=037ms919.185us; 80%=063ms371.725us; 90%=093ms620.418us; 95%=239ms790.553us; 99%=276ms576.170us
+Counter: CreateCompileHandles
+  Value: 1190
+Counter: CreateDataHandles
+  Value: 6019
+Counter: DestroyCompileHandles
+  Value: 1122
+Counter: DestroyDataHandles
+  Value: 4751
+Counter: ReleaseCompileHandles
+  Value: 1122
+Counter: ReleaseDataHandles
+  Value: 4751
+Counter: UncachedSyncTensors
+  Value: 5
+Counter: XRTAllocateFromTensor_Empty
+  Value: 17
+Counter: XrtCompile_Empty
+  Value: 1280
+Counter: XrtExecute_Empty
+  Value: 1280
+Counter: XrtRead_Empty
+  Value: 1280
+Counter: XrtReleaseAllocationHandle_Empty
+  Value: 1280
+Counter: XrtReleaseCompileHandle_Empty
+  Value: 1280
+Counter: XrtSessionCount
+  Value: 11
+Counter: XrtSubTuple_Empty
+  Value: 1280
+Counter: aten::_local_scalar_dense
+  Value: 1000
+Counter: aten::_softmax
+  Value: 60
+Counter: aten::_unsafe_view
+  Value: 540
+Counter: aten::bernoulli_
+  Value: 190
+Counter: aten::embedding_dense_backward
+  Value: 15
+
+03/21/2019 23:06:04 - INFO - __main__ -   DONE 1 optimizer step
+03/21/2019 23:06:04 - INFO - __main__ -   Metric: CompileTime
+  TotalSamples: 2172
+  Counter: 19m24s151ms929.040us
+  ValueRate: 260ms181.023us / second
+  Rate: 4.96937 / second
+  Percentiles: 1%=119.215us; 5%=158.852us; 10%=230.342us; 20%=298.520us; 50%=020ms449.340us; 80%=037ms510.712us; 90%=042ms256.050us; 95%=048ms569.114us; 99%=055ms387.360us
+Metric: ExecuteParallelTime
+  TotalSamples: 2166
+  Counter: 04m38s355ms38.351us
+  ValueRate: 125ms384.476us / second
+  Rate: 5.2458 / second
+  Percentiles: 1%=002ms2.191us; 5%=002ms369.133us; 10%=003ms610.448us; 20%=003ms198.585us; 50%=010ms623.050us; 80%=051ms465.586us; 90%=066ms411.721us; 95%=075ms656.787us; 99%=081ms900.127us
+Metric: ExecuteTime
+  TotalSamples: 5
+  Counter: 22s506ms151.326us
+  ValueRate: 027ms187.234us / second
+  Rate: 0.0063208 / second
+  Percentiles: 1%=04s136ms48.141us; 5%=04s136ms48.141us; 10%=04s136ms48.141us; 20%=04s280ms634.052us; 50%=04s343ms880.312us; 80%=04s392ms834.261us; 90%=04s392ms834.261us; 95%=04s392ms834.261us; 99%=04s392ms834.261us
+Metric: InboundData
+  TotalSamples: 2166
+  Counter: 18.28GB
+  ValueRate: 41.99MB / second
+  Rate: 5.24697 / second
+  Percentiles: 1%=4.00B; 5%=4.00B; 10%=4.00B; 20%=4.00B; 50%=4.00B; 80%=15.00MB; 90%=18.75MB; 95%=18.75MB; 99%=60.00MB
+Metric: OutboundData
+  TotalSamples: 1190
+  Counter: 18.96GB
+  ValueRate: 11.07MB / second
+  Rate: 0.594925 / second
+  Percentiles: 1%=3.00KB; 5%=40.00KB; 10%=15.00MB; 20%=15.00MB; 50%=15.00MB; 80%=18.75MB; 90%=18.75MB; 95%=60.00MB; 99%=60.00MB
+Metric: ReleaseCompileHandlesTime
+  TotalSamples: 1359
+  Counter: 02s633ms429.458us
+  ValueRate: 002ms58.672us / second
+  Rate: 2.0152 / second
+  Percentiles: 1%=555.481us; 5%=629.426us; 10%=656.188us; 20%=700.040us; 50%=813.741us; 80%=958.305us; 90%=001ms51.966us; 95%=001ms145.143us; 99%=002ms767.786us
+Metric: ReleaseDataHandlesTime
+  TotalSamples: 2427
+  Counter: 13s215ms54.529us
+  ValueRate: 006ms681.651us / second
+  Rate: 5.7638 / second
+  Percentiles: 1%=523.434us; 5%=577.079us; 10%=617.689us; 20%=676.448us; 50%=846.100us; 80%=001ms305.466us; 90%=001ms430.916us; 95%=002ms561.544us; 99%=002ms860.150us
+Metric: TransferFromServerTime
+  TotalSamples: 2166
+  Counter: 01m24s412ms779.448us
+  ValueRate: 177ms972.090us / second
+  Rate: 5.24697 / second
+  Percentiles: 1%=958.985us; 5%=001ms112.357us; 10%=001ms212.562us; 20%=001ms352.974us; 50%=002ms803.259us; 80%=049ms395.775us; 90%=067ms779.052us; 95%=097ms800.748us; 99%=376ms831.900us
+Metric: TransferToServerTime
+  TotalSamples: 1190
+  Counter: 01m19s186ms357.809us
+  ValueRate: 045ms999.502us / second
+  Rate: 0.594805 / second
+  Percentiles: 1%=001ms59.521us; 5%=006ms863.791us; 10%=032ms465.927us; 20%=034ms393.607us; 50%=039ms343.410us; 80%=065ms513.211us; 90%=109ms576.138us; 95%=242ms592.618us; 99%=280ms990.688us
+Counter: CreateCompileHandles
+  Value: 1428
+Counter: CreateDataHandles
+  Value: 7342
+Counter: DestroyCompileHandles
+  Value: 1359
+Counter: DestroyDataHandles
+  Value: 5942
+Counter: ReleaseCompileHandles
+  Value: 1359
+Counter: ReleaseDataHandles
+  Value: 5942
+Counter: UncachedSyncTensors
+  Value: 6
+Counter: XRTAllocateFromTensor_Empty
+  Value: 17
+Counter: XrtCompile_Empty
+  Value: 1280
+Counter: XrtExecute_Empty
+  Value: 1280
+Counter: XrtRead_Empty
+  Value: 1280
+Counter: XrtReleaseAllocationHandle_Empty
+  Value: 1280
+Counter: XrtReleaseCompileHandle_Empty
+  Value: 1280
+Counter: XrtSessionCount
+  Value: 11
+Counter: XrtSubTuple_Empty
+  Value: 1280
+Counter: aten::_local_scalar_dense
+  Value: 1200
+Counter: aten::_softmax
+  Value: 72
+Counter: aten::_unsafe_view
+  Value: 648
+Counter: aten::bernoulli_
+  Value: 228
+Counter: aten::embedding_dense_backward
+  Value: 18
+

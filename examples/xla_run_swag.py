@@ -42,6 +42,7 @@ import torch_xla_py.utils as xu
 import torch_xla_py.xla_model as xm
 
 logging.basicConfig(format = '%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
+                    filename = 'exp_log',
                     datefmt = '%m/%d/%Y %H:%M:%S',
                     level = logging.INFO)
 logger = logging.getLogger(__name__)

@@ -124,4 +124,4 @@ tensorflow_code
 # Models
 models
 
-examples/swagfs
+.examples/swagfs
