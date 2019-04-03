@@ -529,6 +529,7 @@ def main():
         if args.local_rank != -1:
             num_train_optimization_steps = num_train_optimization_steps // torch.distributed.get_world_size()
 
+    print('len train', len(train_dataset))
     # Prepare model
     model = BertForPreTraining.from_pretrained(args.bert_model)
     if args.fp16:
@@ -596,8 +597,8 @@ def main():
                 batch = tuple(t.to(device) for t in batch)
                 input_ids, input_mask, segment_ids, lm_label_ids, is_next = batch
                 loss = model(input_ids, segment_ids, input_mask, lm_label_ids, is_next)
-                if n_gpu > 1:
-                    loss = loss.mean() # mean() to average on multi-gpu.
+                # if n_gpu > 1:
+                    # loss = loss.mean() # mean() to average on multi-gpu.
                 if args.gradient_accumulation_steps > 1:
                     loss = loss / args.gradient_accumulation_steps
                 if args.fp16:

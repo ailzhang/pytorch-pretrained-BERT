@@ -41,8 +41,10 @@ import torch_xla
 import torch_xla_py.utils as xu
 import torch_xla_py.xla_model as xm
 
+graph_file = './graphs/step'
+
 logging.basicConfig(format = '%(asctime)s - %(levelname)s - %(name)s -   %(message)s',
-                    filename = 'exp_log',
+                    filename = 'swag_log',
                     datefmt = '%m/%d/%Y %H:%M:%S',
                     level = logging.INFO)
 logger = logging.getLogger(__name__)
@@ -378,6 +380,7 @@ def main():
     model = BertForMultipleChoice.from_pretrained(args.bert_model,
         cache_dir=os.path.join(str(PYTORCH_PRETRAINED_BERT_CACHE), 'distributed_{}'.format(args.local_rank)),
         num_choices=4)
+    print(len(list(model.parameters())))
     if args.fp16:
         model.half()
     model.to(device)
@@ -452,9 +455,14 @@ def main():
                 logger.info("test")
                 batch = tuple(t.to(device) for t in batch)
                 input_ids, input_mask, segment_ids, label_ids = batch
+                input_ids = torch.tensor([101, 2619, 14082, 2041, 2010, 2192, 1012, 102, 2619, 12197, 2619, 3564, 2012, 1996, 9422, 2795, 1012, 102] + [0] * 62).to(device).expand(16, 4, 80)
+                input_mask = torch.tensor([1] * 18 + [0] * 62).to(device).expand(16, 4, 80)
+                segment_ids = torch.tensor([0] * 8 + [1] * 10 + [0] * 62).to(device).expand(16, 4, 80)
+                label_ids = torch.tensor([3] * 16).to(device)
                 loss = model(input_ids, segment_ids, input_mask, label_ids)
                 # Get traced forward graph
-                # print(torch_xla._XLAC._get_xla_tensors_dot([loss]))
+                # with open(graph_file + '_' + str(step)+ '_forward', 'w') as f:
+                    # f.write(torch_xla._XLAC._get_xla_tensors_text([loss]))
                 logger.info("test forward")
                 # if n_gpu > 1:
                     # loss = loss.mean() # mean() to average on multi-gpu.
