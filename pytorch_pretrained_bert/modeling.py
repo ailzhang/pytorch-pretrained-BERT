@@ -49,6 +49,19 @@ PRETRAINED_MODEL_ARCHIVE_MAP = {
 BERT_CONFIG_NAME = 'bert_config.json'
 TF_WEIGHTS_NAME = 'model.ckpt'
 
+#def isinstance_jit(module, types):
+#
+#    if isinstance(module, torch.jit.WeakScriptModuleProxy):
+#        clazz = module.__dict__['_original_class']
+#    else:
+#        clazz = type(module)
+#
+#    for t in types:
+#        if (t == clazz):
+#            return True
+#
+#    return False
+
 def load_tf_weights_in_bert(model, tf_checkpoint_path):
     """ Load tf checkpoints in a pytorch model
     """
@@ -1086,6 +1099,7 @@ class BertForMultipleChoice(BertPreTrainedModel):
         self.dropout = nn.Dropout(config.hidden_dropout_prob)
         self.classifier = nn.Linear(config.hidden_size, 1)
         self.apply(self.init_bert_weights)
+        print(self.classifier.weight.sum())
 
     @torch.jit.script_method
     def forward(self, input_ids, token_type_ids=None, attention_mask=None, labels=None):
