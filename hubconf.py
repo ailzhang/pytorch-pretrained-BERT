@@ -1,4 +1,4 @@
-dependencies = ['torch', 'tqdm', 'boto3', 'requests', 'regex']
+dependencies = ['torch', 'regex']
 
 from hubconfs.bert_hubconf import (
     bertTokenizer,
